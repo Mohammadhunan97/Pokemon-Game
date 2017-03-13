@@ -1,0 +1,33 @@
+body{
+	background-image: url('pokeback.jpg');
+}
+#grass{
+	background-image: url('grass_tile.png');
+	height: 400px;
+	width: 400px;
+	position: absolute; 
+	z-index: 0;
+	top: 300px;
+	left: 400px;
+}
+#player{
+	height: 31px;
+	width: 30.25px;
+	background-image: url('pokeguy.png'); 
+	position: absolute;
+	top:0px;
+	left:180px;
+	z-index: 1;
+}
+.rightplayer{ /*default*/
+	background-position: 0% 0%;
+}
+.downplayer{
+	background-position: 30% 0%; 
+}
+.leftplayer{
+	background-position: 60% 0%;
+}
+.upplayer{
+	background-position: 95% 0%;
+}
