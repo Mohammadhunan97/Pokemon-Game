@@ -71,10 +71,8 @@ class BooksController < ApplicationController
     end
   end
 
-
-# to future devs, line 77 to 91 statement works bc of weird ruby truthy val thing, please don't adjust without first reading what it does. 
   def create
-    if(!current_user.street.blank? && !current_user.city.blank?)
+    if(current_user.street != "" && current_user.city != "")
       puts "#{current_user.street} #{current_user.city} foobar foobar"
     Book.create(title: params[:title],
       author: params[:authors],
